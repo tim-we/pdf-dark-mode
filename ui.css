@@ -1,0 +1,3 @@
+.secondaryToolbarButton.pdfDarkMode::before {
+	content: url("dark-mode.png");
+}

@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "PDF Dark Mode",
+	"version": "1.0",
+	"author": "Tim Weißenfels",
+
+	"content_scripts": [
+		{
+			"matches": ["file:///*.pdf", "*://*/*.pdf","*://mozilla.github.io/pdf.js/web/viewer.html"],
+			"js": ["dark-mode.js"],
+			"css": ["ui.css", "dark-mode.css"]
+		}
+	]
+}

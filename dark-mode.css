@@ -1,0 +1,37 @@
+div.pdfViewer > div.page {
+	transition: backgroundColor .5s;
+}
+
+div.pdfViewer > div.page > div.textLayer {
+	transition: opacity .25s;
+}
+
+div.pdfViewer > div.page > div.textLayer > div {
+	transition: color .42s;
+}
+
+div.pdfViewer.dark > div.page {
+	background-color: rgb(32,32,32);
+	border-image: none;
+}
+
+div.pdfViewer.dark > div.page > div.canvasWrapper {
+	visibility: hidden;
+}
+
+div.pdfViewer.dark > div.page > div.textLayer {
+	opacity: 1;
+}
+
+div.pdfViewer.dark > div.page > div.textLayer ::-moz-selection {
+	background: rgba(0, 183, 255, 0.5);
+}
+
+div.pdfViewer.dark > div.page > div.textLayer > div {
+	color: white;
+}
+
+div.pdfViewer.dark > div.page > div.annotationLayer .linkAnnotation > a:hover, .annotationLayer .buttonWidgetAnnotation.pushButton > a:hover {
+	opacity: 0.25;
+	box-shadow: 0px 0px 4px #ff0;
+}
